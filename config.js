@@ -1,6 +1,6 @@
 
-export const DOMAIN = 'http://localhost:3000';
-// export const DOMAIN = 'https://www.solomaxlevelnewbie.adoptedbyamurderousdukefamily.in.net';
+// export const DOMAIN = 'http://localhost:3000';
+export const DOMAIN = 'https://www.solomaxlevelnewbie.adoptedbyamurderousdukefamily.in.net';
 
 
 export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u>Solo Max Level Newbie</u></a> is a light novel series that follows the adventures of a novice gamer who unexpectedly reaches the highest level in a virtual reality game. Faced with newfound power and challenges, the protagonist navigates a world where experience doesn't always mean skill, blending humor with exploration as they strive to prove themselves among seasoned players.`;
