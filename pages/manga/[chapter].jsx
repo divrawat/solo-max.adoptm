@@ -7,6 +7,7 @@ import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPT
 import React from 'react';
 import dynamic from 'next/dynamic';
 const AdSense = dynamic(() => import('@/components/Adsense'), { ssr: false });
+const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
 export const runtime = 'experimental-edge';
 
 export default function Chapter({ chapterNumber, imageUrls, totalChapters, params, errorcode }) {
@@ -86,6 +87,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
         <>
             {head()}
             <Navbar />
+            <Popup />
             <article>
                 <h1 className="text-3xl font-bold text-center p-5 md:my-5">{`${MANGA_NAME} Chapter ${chapterNumber}`}</h1>
                 <p className='text-center px-4'>{`You are reading ${MANGA_NAME} Chapter ${chapterNumber}`}</p>
